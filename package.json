@@ -11,6 +11,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@exfabrica/strapi-plugin-awesome-seo": "^1.0.0-beta.1.2",
     "@offset-dev/strapi-calendar": "^0.0.10",
     "@palmabit/strapi-app-version": "^1.1.0",
     "@strapi/plugin-i18n": "4.13.6",

@@ -5,9 +5,6 @@ module.exports = ({ env }) => ({
   "schemas-to-ts": {
     enabled: true,
   },
-  seo: {
-    enabled: true,
-  },
   upload: {
     config: {
       provider: "cloudinary",
