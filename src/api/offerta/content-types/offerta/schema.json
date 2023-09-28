@@ -4,7 +4,8 @@
   "info": {
     "singularName": "offerta",
     "pluralName": "offertas",
-    "displayName": "Offerta"
+    "displayName": "Offerta",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,12 +19,12 @@
       "maxLength": 80
     },
     "Asset": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "Esclusiva": {
       "type": "boolean",
@@ -56,6 +57,16 @@
       "type": "component",
       "repeatable": false,
       "component": "componenti-offerta.gas"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
+    "metaSocial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-social"
     }
   }
 }

@@ -3,10 +3,16 @@
 import { Media } from '../../../../common/schemas-to-ts/Media';
 import { Luce } from '../../../../components/componenti-offerta/interfaces/Luce';
 import { Gas } from '../../../../components/componenti-offerta/interfaces/Gas';
+import { Seo } from '../../../../components/shared/interfaces/Seo';
+import { MetaSocial } from '../../../../components/shared/interfaces/MetaSocial';
 import { Luce_Plain } from '../../../../components/componenti-offerta/interfaces/Luce';
 import { Gas_Plain } from '../../../../components/componenti-offerta/interfaces/Gas';
+import { Seo_Plain } from '../../../../components/shared/interfaces/Seo';
+import { MetaSocial_Plain } from '../../../../components/shared/interfaces/MetaSocial';
 import { Luce_NoRelations } from '../../../../components/componenti-offerta/interfaces/Luce';
 import { Gas_NoRelations } from '../../../../components/componenti-offerta/interfaces/Gas';
+import { Seo_NoRelations } from '../../../../components/shared/interfaces/Seo';
+import { MetaSocial_NoRelations } from '../../../../components/shared/interfaces/MetaSocial';
 import { AdminPanelRelationPropertyModification } from '../../../../common/schemas-to-ts/AdminPanelRelationPropertyModification';
 
 export interface Offerta {
@@ -21,6 +27,8 @@ export interface Offerta {
     Pagamento?: string;
     luce?: Luce;
     Gas?: Gas;
+    seo: Seo[];
+    metaSocial: MetaSocial[];
   };
 }
 export interface Offerta_Plain {
@@ -34,6 +42,8 @@ export interface Offerta_Plain {
   Pagamento?: string;
   luce?: Luce_Plain;
   Gas?: Gas_Plain;
+  seo: Seo_Plain[];
+  metaSocial: MetaSocial_Plain[];
 }
 
 export interface Offerta_NoRelations {
@@ -47,6 +57,8 @@ export interface Offerta_NoRelations {
   Pagamento?: string;
   luce?: Luce_NoRelations;
   Gas?: Gas_NoRelations;
+  seo: Seo_NoRelations[];
+  metaSocial: MetaSocial_NoRelations[];
 }
 
 export interface Offerta_AdminPanelLifeCycle {
@@ -60,4 +72,6 @@ export interface Offerta_AdminPanelLifeCycle {
   Pagamento?: string;
   luce?: Luce_Plain;
   Gas?: Gas_Plain;
+  seo: Seo_Plain[];
+  metaSocial: MetaSocial_Plain[];
 }
