@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_componenti_offerta_gases",
+  "info": {
+    "displayName": "Gas"
+  },
+  "options": {},
+  "attributes": {
+    "prezzo": {
+      "type": "richtext",
+      "maxLength": 32
+    },
+    "quota_fissa": {
+      "type": "richtext",
+      "maxLength": 32
+    }
+  }
+}

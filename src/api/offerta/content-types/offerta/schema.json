@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offertas",
+  "info": {
+    "singularName": "offerta",
+    "pluralName": "offertas",
+    "displayName": "Offerta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 80
+    },
+    "Asset": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Esclusiva": {
+      "type": "boolean",
+      "default": false
+    },
+    "Descrizione": {
+      "type": "richtext",
+      "maxLength": 120
+    },
+    "Dettaglio": {
+      "type": "richtext",
+      "maxLength": 120
+    },
+    "Indicizzato": {
+      "type": "richtext",
+      "maxLength": 24
+    },
+    "Pagamento": {
+      "type": "richtext",
+      "maxLength": 64
+    },
+    "luce": {
+      "displayName": "Luce",
+      "type": "component",
+      "repeatable": false,
+      "component": "componenti-offerta.luce"
+    },
+    "Gas": {
+      "displayName": "Gas",
+      "type": "component",
+      "repeatable": false,
+      "component": "componenti-offerta.gas"
+    }
+  }
+}

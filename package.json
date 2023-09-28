@@ -1,10 +1,13 @@
 {
-  "name": "strapi",
+  "name": "synesthetica-strapi",
+  "author": {
+    "name": "Stefano Salidu"
+  },
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Synesthetica Strapi",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
@@ -16,9 +19,6 @@
     "@strapi/provider-upload-cloudinary": "4.13.6",
     "@strapi/strapi": "4.13.6",
     "pg": "8.11.3"
-  },
-  "author": {
-    "name": "A Strapi developer"
   },
   "strapi": {
     "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"

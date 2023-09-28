@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_componenti_offerta_luces",
+  "info": {
+    "displayName": "Luce"
+  },
+  "options": {},
+  "attributes": {
+    "prezzo": {
+      "type": "richtext",
+      "maxLength": 32
+    },
+    "quota_fissa": {
+      "type": "richtext",
+      "maxLength": 32
+    }
+  }
+}
