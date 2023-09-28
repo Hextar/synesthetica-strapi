@@ -2,7 +2,7 @@
   "name": "synesthetica-strapi",
   "author": "Stefano Salidu",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Synesthetica Strapi",
   "scripts": {
     "dev": "strapi develop",
@@ -11,19 +11,17 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@exfabrica/strapi-plugin-awesome-help": "^1.0.8",
     "@offset-dev/strapi-calendar": "^0.0.10",
     "@palmabit/strapi-app-version": "^1.1.0",
-    "@sklinet/strapi-plugin-tinymce": "^1.0.6",
     "@strapi/plugin-i18n": "4.13.6",
     "@strapi/plugin-seo": "^1.9.5",
     "@strapi/plugin-users-permissions": "4.13.6",
     "@strapi/provider-upload-cloudinary": "4.13.6",
     "@strapi/strapi": "4.13.6",
-    "bcrypt": "^5.1.1",
     "pg": "8.11.3",
     "strapi-plugin-publisher": "^1.4.1",
-    "strapi-plugin-schemas-to-ts": "^1.1.10"
+    "strapi-plugin-schemas-to-ts": "^1.1.10",
+    "strapi-tiptap-editor": "^0.9.12"
   },
   "strapi": {
     "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"

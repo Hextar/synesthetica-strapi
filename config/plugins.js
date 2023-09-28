@@ -6,9 +6,6 @@ module.exports = ({ env }) => ({
     enabled: true,
   },
   seo: {
-    enabled: env("NODE_ENV") === "production",
-  },
-  tinymce: {
     enabled: true,
   },
   upload: {
