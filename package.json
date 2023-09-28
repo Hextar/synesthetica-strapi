@@ -6,9 +6,9 @@
   "description": "Synesthetica Strapi",
   "scripts": {
     "dev": "strapi develop",
+    "prod": "strapi build && strapi start",
     "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "build": "strapi build"
   },
   "dependencies": {
     "@exfabrica/strapi-plugin-awesome-seo": "^1.0.0-beta.1.2",
