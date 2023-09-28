@@ -7,22 +7,22 @@ export enum SocialNetwork {
   Twitter = 'Twitter',}
 
 export interface MetaSocial {
-  socialNetwork: SocialNetwork;
-  title: string;
-  description: string;
+  socialNetwork?: SocialNetwork;
+  title?: string;
+  description?: string;
   image?: { data: Media };
 }
 export interface MetaSocial_Plain {
-  socialNetwork: SocialNetwork;
-  title: string;
-  description: string;
+  socialNetwork?: SocialNetwork;
+  title?: string;
+  description?: string;
   image?: Media;
 }
 
 export interface MetaSocial_NoRelations {
-  socialNetwork: SocialNetwork;
-  title: string;
-  description: string;
+  socialNetwork?: SocialNetwork;
+  title?: string;
+  description?: string;
   image?: number;
 }
 

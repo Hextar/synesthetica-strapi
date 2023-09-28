@@ -6,8 +6,8 @@ import { MetaSocial_Plain } from './MetaSocial';
 import { MetaSocial_NoRelations } from './MetaSocial';
 
 export interface Seo {
-  metaTitle: string;
-  metaDescription: string;
+  metaTitle?: string;
+  metaDescription?: string;
   metaImage?: { data: Media };
   metaSocial: MetaSocial[];
   keywords?: string;
@@ -17,8 +17,8 @@ export interface Seo {
   canonicalURL?: string;
 }
 export interface Seo_Plain {
-  metaTitle: string;
-  metaDescription: string;
+  metaTitle?: string;
+  metaDescription?: string;
   metaImage?: Media;
   metaSocial: MetaSocial_Plain[];
   keywords?: string;
@@ -29,8 +29,8 @@ export interface Seo_Plain {
 }
 
 export interface Seo_NoRelations {
-  metaTitle: string;
-  metaDescription: string;
+  metaTitle?: string;
+  metaDescription?: string;
   metaImage?: number;
   metaSocial: MetaSocial_NoRelations[];
   keywords?: string;

@@ -15,63 +15,79 @@ import { Seo_NoRelations } from '../../../../components/shared/interfaces/Seo';
 import { MetaSocial_NoRelations } from '../../../../components/shared/interfaces/MetaSocial';
 import { AdminPanelRelationPropertyModification } from '../../../../common/schemas-to-ts/AdminPanelRelationPropertyModification';
 
+export enum Indicizzato {
+  NonArera = 'Non ARERA',
+  Arera = 'ARERA',}
+
 export interface Offerta {
   id: number;
   attributes: {
-    createdAt: Date;    updatedAt: Date;    publishedAt?: Date;    nome: string;
-    Asset: { data: Media };
+    createdAt: Date;    updatedAt: Date;    publishedAt?: Date;    Nome: string;
+    asset_media?: { data: Media };
     Esclusiva?: boolean;
     Descrizione?: string;
     Dettaglio?: string;
-    Indicizzato?: string;
-    Pagamento?: string;
-    luce?: Luce;
+    Luce?: Luce;
     Gas?: Gas;
     seo: Seo[];
     metaSocial: MetaSocial[];
+    Indicizzato: Indicizzato;
+    Slug?: string;
+    Pagamento: any;
+    Asseturl?: string;
+    Asset_url?: string;
   };
 }
 export interface Offerta_Plain {
   id: number;
-  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  nome: string;
-  Asset: Media;
+  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  Nome: string;
+  asset_media?: Media;
   Esclusiva?: boolean;
   Descrizione?: string;
   Dettaglio?: string;
-  Indicizzato?: string;
-  Pagamento?: string;
-  luce?: Luce_Plain;
+  Luce?: Luce_Plain;
   Gas?: Gas_Plain;
   seo: Seo_Plain[];
   metaSocial: MetaSocial_Plain[];
+  Indicizzato: Indicizzato;
+  Slug?: string;
+  Pagamento: any;
+  Asseturl?: string;
+  Asset_url?: string;
 }
 
 export interface Offerta_NoRelations {
   id: number;
-  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  nome: string;
-  Asset: number;
+  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  Nome: string;
+  asset_media?: number;
   Esclusiva?: boolean;
   Descrizione?: string;
   Dettaglio?: string;
-  Indicizzato?: string;
-  Pagamento?: string;
-  luce?: Luce_NoRelations;
+  Luce?: Luce_NoRelations;
   Gas?: Gas_NoRelations;
   seo: Seo_NoRelations[];
   metaSocial: MetaSocial_NoRelations[];
+  Indicizzato: Indicizzato;
+  Slug?: string;
+  Pagamento: any;
+  Asseturl?: string;
+  Asset_url?: string;
 }
 
 export interface Offerta_AdminPanelLifeCycle {
   id: number;
-  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  nome: string;
-  Asset: AdminPanelRelationPropertyModification<Media>;
+  createdAt: Date;  updatedAt: Date;  publishedAt?: Date;  Nome: string;
+  asset_media?: AdminPanelRelationPropertyModification<Media>;
   Esclusiva?: boolean;
   Descrizione?: string;
   Dettaglio?: string;
-  Indicizzato?: string;
-  Pagamento?: string;
-  luce?: Luce_Plain;
+  Luce?: Luce_Plain;
   Gas?: Gas_Plain;
   seo: Seo_Plain[];
   metaSocial: MetaSocial_Plain[];
+  Indicizzato: Indicizzato;
+  Slug?: string;
+  Pagamento: any;
+  Asseturl?: string;
+  Asset_url?: string;
 }

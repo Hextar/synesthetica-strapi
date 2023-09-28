@@ -5,6 +5,17 @@ module.exports = ({ env }) => ({
   "schemas-to-ts": {
     enabled: true,
   },
+  slugify: {
+    enabled: true,
+    config: {
+      contentTypes: {
+        article: {
+          field: "slug",
+          references: "title",
+        },
+      },
+    },
+  },
   upload: {
     config: {
       provider: "cloudinary",

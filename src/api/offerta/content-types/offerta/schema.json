@@ -12,16 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nome": {
+    "Nome": {
       "type": "string",
       "required": true,
       "unique": true,
       "maxLength": 80
     },
-    "Asset": {
+    "asset_media": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -38,15 +38,7 @@
       "type": "richtext",
       "maxLength": 120
     },
-    "Indicizzato": {
-      "type": "richtext",
-      "maxLength": 24
-    },
-    "Pagamento": {
-      "type": "richtext",
-      "maxLength": 64
-    },
-    "luce": {
+    "Luce": {
       "displayName": "Luce",
       "type": "component",
       "repeatable": false,
@@ -67,6 +59,37 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.meta-social"
+    },
+    "Indicizzato": {
+      "type": "enumeration",
+      "enum": [
+        "Non ARERA",
+        "ARERA"
+      ],
+      "required": true,
+      "default": "Non ARERA"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Nome"
+    },
+    "Pagamento": {
+      "type": "customField",
+      "options": [
+        "Bollettino Postale",
+        "Carta di Credito",
+        "RID"
+      ],
+      "required": true,
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Asseturl": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+    },
+    "Asset_url": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
     }
   }
 }
