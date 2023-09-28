@@ -1,8 +1,6 @@
 {
   "name": "synesthetica-strapi",
-  "author": {
-    "name": "Stefano Salidu"
-  },
+  "author": "Stefano Salidu",
   "private": true,
   "version": "0.1.0",
   "description": "Synesthetica Strapi",
@@ -12,12 +10,12 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-i18n": "4.13.6",
     "@strapi/plugin-users-permissions": "4.13.6",
     "@strapi/provider-upload-cloudinary": "4.13.6",
     "@strapi/strapi": "4.13.6",
+    "bcrypt": "^5.1.1",
     "pg": "8.11.3"
   },
   "strapi": {
